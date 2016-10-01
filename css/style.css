@@ -1,0 +1,49 @@
+/* text in body uses Lato font and 300 font weight*/
+body {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* following are used to set the colors and font weights */
+.text-muted {
+  color: #7d97a;
+}
+.text-thin {
+  font-weight: 100;
+}
+.title-logo {
+  margin-top: 20px;
+  color: #02b3e;
+}
+
+/* media query to set the color for horizontal line and h3 size and color */
+@media screen and (min-width: 750px) {
+  hr {
+    border-color: #00ff00;
+  }
+  h3 {
+    font-size: 2em;
+    color: #2d3c49;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  hr {
+    border-color: #ff0000;
+  }
+  h3 {
+    font-size: 1.5em;
+    color: #2d3c49;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  hr {
+    border-color: #0000ff;
+  }
+  h3 {
+    font-size: 1em;
+    color: #2d3c49;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashok Maske Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="//normailze-css.googlecode.com/svn/trunk/normalize.css">
+
+    <!-- include Bootstrap files -->
+    <script src="js/jquery-3.1.0.slim.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!-- include Google font family style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class = "container">
+      <!-- row contains two columns for title text and logo image -->
+      <div class = "row">
+        <div class = "col-md-6">
+          <img class="img-responsive title-logo" src="image/logo.png" alt="logo">
+        </div>
+        <div class = "col-md-6 text-right text-uppercase">
+          <h1 class="text-thin">Ashok Maske</h1>
+          <h4>Front-End Ninja</h4>
+        </div>
+      </div>
+      <!-- row  contains one column for line-->
+      <div class = "row">
+        <div class = "col-md-12">
+          <hr>
+        </div>
+      </div>
+      <!-- row contains one column for main image -->
+      <!-- different image size is displayed based on viewport -->
+      <div class = "row">
+        <div class = "col-md-12">
+          <picture>
+            <source media="(min-width: 750px)" srcset="image/flag-lrg.png"/>
+            <source media="(min-width: 500px)" srcset="image/flag-med.png"/>
+            <img class="img-responsive" src="image/flag.png" alt="flag">
+        </picture>
+        </div>
+      </div>
+      <!-- row contains one column for text -->
+      <div class = "row">
+        <div class = "col-md-12">
+          <h1 class="text-muted">Featured Work</h1>
+        </div>
+      </div>
+      <!-- row contains three columns for details -->
+      <div class = "row">
+        <!-- each column displays different image size based on viewport -->
+        <!-- when image is clicked, details of the image is displayed in a modal box -->
+        <div class = "col-md-4 text-center">
+          <picture>
+            <source media="(min-width: 750px)" srcset="image/zebras-lrg.png"/>
+            <source media="(min-width: 500px)" srcset="image/zebras-med.png"/>
+            <img class="img-responsive" src="image/zebras.png" alt="zebras" data-toggle="modal" data-target="#image01">
+          </picture>
+          <h3 class="text-uppercase">Zebras</h3>
+          <a href="portfolio-ashokmaske.html">Ashok Maske Portfolio</a>
+        </div>
+        <div class = "col-md-4 text-center">
+            <picture>
+              <source media="(min-width: 750px)" srcset="image/naturalbridge-lrg.png"/>
+              <source media="(min-width: 500px)" srcset="image/naturalbridge-med.png"/>
+              <img class="img-responsive" src="image/naturalbridge.png" alt="naturalbridge" data-toggle="modal" data-target="#image02">
+            </picture>
+            <h3 class="text-uppercase">Natural Bridge</h3>
+            <a href="portfolio-ashokmaske.html">Ashok Maske Portfolio</a>
+        </div> 
+        <div class = "col-md-4 text-center">
+            <picture>
+              <source media="(min-width: 750px)" srcset="image/beach-lrg.png"/>
+              <source media="(min-width: 500px)" srcset="image/beach-med.png"/>
+              <img class="img-responsive" src="image/beach.png" alt="beach" data-toggle="modal" data-target="#image03">
+            </picture>
+            <h3 class="text-uppercase">Beach</h3>
+            <a href="portfolio-ashokmaske.html">Ashok Maske Portfolio</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal box content for images-->
+    <div class="modal fade" id="image01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/zebras.png">
+                    Zebras at Safari Park, Virginia.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="image02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="image/naturalbridge.png">
+                Natural rock bridge attraction in Virginia.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="image03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src="image/beach.png">
+                People enjoying at a beach in Goa, India.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
