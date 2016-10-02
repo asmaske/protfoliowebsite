@@ -1,20 +1,22 @@
 /* text in body uses Lato font and 300 font weight*/
 body {
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
 /* following are used to set the colors and font weights */
 .text-muted {
-  color: #7d97a;
+  color: #7d97a0;
 }
+
 .text-thin {
   font-weight: 100;
 }
+
 .title-logo {
   margin-top: 20px;
-  color: #02b3e;
+  color: #02b3e0;
 }
 
 .text-work {
@@ -22,6 +24,7 @@ body {
   font-weight: bold;
   font-size: 1em;
 }
+
 .text-footer {
   margin-top: 2em;
   margin-bottom: 2em;

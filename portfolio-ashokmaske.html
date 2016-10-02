@@ -9,17 +9,15 @@
     <link rel="stylesheet" src="//normailze-css.googlecode.com/svn/trunk/normalize.css">
 
     <!-- include Bootstrap files -->
-    <script src="js/jquery-3.1.0.slim.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
     <!-- include Google font family style -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <header>
     <div class = "container">
-      <div class="page-header">
-      <!-- row contains two columns for title text and logo image -->
+    <!-- row contains two columns for title text and logo image -->
       <div class = "row">
         <div class = "col-md-6">
           <img class="img-responsive title-logo" src="image/logo.png" alt="logo">
@@ -29,16 +27,18 @@
           <h4>Front-End Ninja</h4>
         </div>
       </div>
-    </div>
+  </header>
+  <article>
+    <div class = "container">
       <!-- row contains one column for main image -->
       <!-- different image size is displayed based on viewport -->
       <div class = "row">
-        <div class = "col-md-12">
+        <div class = "col-md-12 text-center">
           <picture>
             <source media="(min-width: 750px)" srcset="image/flag-lrg.png"/>
             <source media="(min-width: 500px)" srcset="image/flag-med.png"/>
             <img class="img-responsive" src="image/flag.png" alt="flag">
-        </picture>
+          </picture>
         </div>
       </div>
       <!-- row contains one column for text -->
@@ -84,9 +84,16 @@
         </div>
       </div>
     </div>
-    <footer class="text-footer">
-      Ashok Maske [Portfolio Website]
-    </footer>
+  </article>
+  <footer>
+    <div class="cpntainer">
+      <div class="row">
+        <div class="col-md-12 text-footer">
+          Ashok Maske [Portfolio Website]
+        </div>
+      </div>
+    </div>
+  </footer>
     <!-- Modal box content for images-->
     <div class="modal fade" id="image01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -95,7 +102,7 @@
                     <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="image/zebras.png">
+                    <img class="img-responsive" src="image/zebras.png" alt="zebras">
                     Zebras at Safari Park, Virginia.
                 </div>
                 <div class="modal-footer">
@@ -111,7 +118,7 @@
                 <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="image/naturalbridge.png">
+                <img class="img-responsive" src="image/naturalbridge.png" alt="natural bridge">
                 Natural rock bridge attraction in Virginia.
             </div>
             <div class="modal-footer">
@@ -127,7 +134,7 @@
                 <h4 class="modal-title" id="myModalLabel">Favorite Photographs</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src="image/beach.png">
+                <img class="img-responsive" src="image/beach.png" alt="beach">
                 People enjoying at a beach in Goa, India.
             </div>
             <div class="modal-footer">
@@ -136,5 +143,7 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery-3.1.0.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
