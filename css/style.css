@@ -17,6 +17,20 @@ body {
   color: #02b3e;
 }
 
+.text-work {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1em;
+}
+.text-footer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #c6bec6;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* media query to set the color for horizontal line and h3 size and color */
 @media screen and (min-width: 750px) {
   hr {
